@@ -1,0 +1,18 @@
+{
+  "name": "PlayWrightAutomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests/demo.spec.js --headed",
+    "regression": "npx playwright test ClientAppPO.spec.js --config playwright1.config.js --project=chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^26.1.1",
+    "allure-playwright": "^3.10.2"
+  }
+}
