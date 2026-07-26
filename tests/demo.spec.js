@@ -1,7 +1,6 @@
- const { expect} = require('@playwright/test');
- const { test } = require('./my-test');
+ const { expect,test} = require('@playwright/test');
  const {POManager} = require('../pageobjects/POManager');
- const dataset =  JSON.parse(JSON.stringify(require("./utils/data.json")));
+ const dataset =  JSON.parse(JSON.stringify(require("../utils/placeorderTestData.json")));
 
  test.beforeAll( () => {
   console.log("i am the first");
